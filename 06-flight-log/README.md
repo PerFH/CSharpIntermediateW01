@@ -25,6 +25,8 @@ Når en klasse eier en liste, kan den tilby noen få kontrollerte operasjoner. A
 | Clear() | 0 |
 | Clear() igjen | 0 |
 | Add("") | 1 |
+| 2 lister ||---|
+| 
 
 En annen, ny logg skal fortsatt ha Count 0.
 

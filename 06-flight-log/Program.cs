@@ -1,8 +1,22 @@
 FlightLog log = new FlightLog();
+FlightLog log2 = new FlightLog();
 Console.WriteLine(log.Count);
-log.Add("Launch");
-log.Add("Orbit");
+log.AddEntry("Launch");
 Console.WriteLine(log.Count);
-log.Clear();
+log.AddEntry("Orbit");
 Console.WriteLine(log.Count);
-// TODO: Legg til de resterende testene.
+log.ListClear();
+Console.WriteLine(log.Count);
+log.ListClear();
+Console.WriteLine(log.Count);
+log.AddEntry("");
+Console.WriteLine(log.Count);
+Console.WriteLine(log2.Count);
+log2.AddEntry("Launch");
+Console.WriteLine(log2.Count);
+log2.AddEntry("Orbit");
+Console.WriteLine(log2.Count);
+log2.AddEntry("");
+Console.WriteLine(log2.Count);
+Console.WriteLine(log.Count);
+
