@@ -4,6 +4,14 @@ history.Add("Orbit");
 List<string> snapshot = history.GetSnapshot();
 Console.WriteLine(history.Count);
 Console.WriteLine(snapshot.Count);
-snapshot.Clear();
+history.Add("Landing");
+history.Clear();
 Console.WriteLine(history.Count);
-// TODO: Legg til resten av testene, også med int.
+Console.WriteLine(snapshot.Count);
+foreach (var item in snapshot)
+{
+    Console.WriteLine(item);
+}
+
+//history.Add(99)
+//int compiler ikke når listen allerede er definert som en string
