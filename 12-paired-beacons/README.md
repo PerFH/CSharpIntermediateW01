@@ -21,7 +21,7 @@ Nå skal du bruke kjente konsepter i en ny sammenheng. Et par består av to verd
 
 | Par | Forventning |
 |---|---|
-| "North", "South" | First er North, Second er South; ShowPair skriver begge |
+| "North", "South" | First er North, Second er South; ShowPair skriver begge | 
 | 12, 24 | First er 12, Second er 24; ShowPair skriver begge |
 | To Beacon-objekter med navn A og B | First.Name er A, Second.Name er B |
 | Nytt par etter første par | Første par er uendret |
@@ -32,6 +32,10 @@ Noter forventet og faktisk resultat. Startkoden er ment å kunne bygges, men TOD
 ## Forklar med egne ord
 
 Hvorfor trenger ikke Pair<T> vite hvilke egenskaper Beacon har? Hva gir generics her som to separate klasser ikke gir?
+
+Pair sammenligner to objekter, objektene har egenskapene, derfor kan vi gå via pair og plukke ut objekter, og deretter inspisere, uten at pair vet noe om egenskapene til objektene.
+
+Generics her 
 
 ## Ferdig når
 
